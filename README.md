@@ -13,11 +13,15 @@ My personal Arch Linux configuration with the Hyprland window manager.
 <img width="1876" height="986" alt="rice4" src="https://github.com/user-attachments/assets/10d4227f-2f54-4682-abea-11d2bb353e35" />
 
 ## ✨ Features
-
-- **WM**: Hyprland (Wayland compositor)
+- **System**: Arch Linux
+- **WM**: Hyprland
 - **Terminal**: Kitty
 - **Shell**: Fish
+- **Notifications**: dunst
 - **Launcher**: Wofi
+- **Power Menu**: Wlogout 
+- **Lock Screen**: hyprlock
+- **Wallpapers**: hyprpaper
 - **Bar**: Waybar
 - **File Manager**: Dholpin
 - **Editor**: Neovim
