@@ -42,30 +42,31 @@ k* {
 
 #custom-updates {
   color: #84cc16;
+  margin-right: 8px;
 }
 
 #temperature {
   color: #eab308;
-  margin-right: 4px;
+  margin-right: 8px;
 }
 
 #memory {
   color: #d946ef;
-  margin-right: 4px;
+  margin-right: 8px;
 }
 
 #cpu {
   color: #0ea5e9;
-  margin-right: 4px;
+  margin-right: 8px;
 }
 
 #pulseaudio {
   color: #14b8a6;
-  margin-right: 4px;
+  margin-right: 8px;
 }
 
 #battery {
-  margin-right: 4px;
+  margin-right: 8px;
 }
 
 #custom-nightmode {
@@ -85,4 +86,6 @@ k* {
 
 #custom-powermenu {
   color: #f43f5e;
+  font-size: 1.5em;
+  margin-right: 8px;
 }

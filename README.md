@@ -44,7 +44,7 @@ Estes dotfiles foram criados para proporcionar um ambiente de desenvolvimento Li
 ### 🎨 Estética e Notificações
 
 - **Notifications**: dunst
-- **Wallpapers**: hyprpaper
+- **Wallpapers**: awww
 - **Fonts**: JetBrains Mono Nerd Font
 
 ### 🛠️ Ferramentas de Produtividade
