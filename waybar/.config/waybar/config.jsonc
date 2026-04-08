@@ -2,10 +2,9 @@
   "layer": "top",
   "position": "top",
   "margin-bottom": 0,
-  "modules-left": ["clock", "hyprland/workspaces", "tray"],
-  "modules-center": ["hyprland/window"],
+  "modules-left": ["hyprland/workspaces", "tray"],
+  "modules-center": ["clock"],
   "modules-right": [
-    "custom/updates",
     "temperature",
     "memory",
     "cpu",
@@ -21,20 +20,18 @@
     "spacing": 8
   },
   "clock": {
-    "format": " 󰸗 {:%I:%M %p} ",
+    "format": "󰸗 {:%I:%M %p} ",
     "interval": 60,
     "tooltip": true,
     "tooltip-format": "{:%d %B %H:%M}",
     "on-click": "zenity --calendar --width=300 --height=300 --title='Calendário'"
-},
+  },
   "hyprland/workspaces": {
     "format": "{icon}",
     "separate-outputs": false,
     "active-only": false,
-    // turn on true to show same all workspaces on each monitor
     "all-outputs": false,
     "format-icons": {
-      // 1-10
       "1": "1",
       "2": "2",
       "3": "3",
@@ -45,7 +42,6 @@
       "8": "8",
       "9": "9",
       "10": "10",
-      // 11-110
       "11": "1",
       "12": "2",
       "13": "3",
@@ -56,7 +52,6 @@
       "18": "8",
       "19": "9",
       "110": "10",
-      // 21-110
       "21": "1",
       "22": "2",
       "23": "3",
@@ -67,40 +62,10 @@
       "28": "8",
       "29": "9",
       "210": "10"
-
-      // // 1-10
-      // "1": "一",
-      // "2": "二",
-      // "3": "三",
-      // "4": "四",
-      // "5": "五",
-      // "6": "六",
-      // "7": "七",
-      // "8": "八",
-      // "9": "九",
-      // "10": "十",
-      // // 11-10
-      // "11": "一",
-      // "12": "二",
-      // "13": "三",
-      // "14": "四",
-      // "15": "五",
-      // "16": "六",
-      // "17": "七",
-      // "18": "八",
-      // "19": "九",
-      // "110": "十"
     }
   },
   "hyprland/window": {
     "format": "{}"
-  },
-  "custom/updates": {
-    "exec": "bash -lc 'r=$(checkupdates 2>/dev/null | wc -l); a=$(yay -Qua 2>/dev/null | wc -l); total=$((r+a)); if [ $total -gt 0 ]; then echo \" $total\"; else echo \" ✓\"; fi'",
-    "interval": 600,
-    "tooltip": true,
-    "tooltip-format": "Updates: {} | Left click: update all",
-    "on-click": "kitty -e bash -lc 'yay -Syu'"
   },
   "temperature": {
     "format": "{icon} {temperatureC}°C ",
