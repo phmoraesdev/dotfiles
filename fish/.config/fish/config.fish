@@ -36,5 +36,6 @@ if status is-interactive
     end
     
     alias ls "ls --color=auto"
+    alias ff "fastfetch"
     
 end
